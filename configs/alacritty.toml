@@ -2,3 +2,7 @@ import = [ "~/.config/alacritty/theme.toml", "~/.config/alacritty/font.toml", "~
 
 [font]
 size = 10
+
+[window.dimensions]
+columns = 140
+lines = 70
