@@ -23,3 +23,9 @@ cat /proc/cpuinfo
 
 # /etc/default/cpupower
 # max_freq="2.5GHz"
+sudo rm -rf /etc/mbpfan.conf
+sudo ln -s /home/cloudgenius/.local/share/omakub/configs/mbpfan/mbpfan.conf /etc/mbpfan.conf
+
+sudo apt-get install -y mbpfan
+sudo systemctl enable --now mbpfan.service
+sudo systemctl restart mbpfan.service
