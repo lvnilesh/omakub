@@ -31,6 +31,9 @@ ln -s /usr/local/share/keyd/gnome-extension-45 ~/.local/share/gnome-shell/extens
 
 sudo systemctl enable --now keyd
 sudo systemctl restart keyd
+sudo keyd reload
+
+# use xev command to listen for keystrokes
 
 # Finally restart Gnome and run:
 
