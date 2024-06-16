@@ -16,6 +16,7 @@ gext install just-perfection-desktop@just-perfection
 gext install blur-my-shell@aunetx
 gext install space-bar@luchrioh
 gext install caffeine@patapon.info
+gext install undecorate@sun.wxg@gmail.com
 
 # Compile gsettings schemas in order to be able to set them
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
@@ -65,5 +66,11 @@ gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-activate-wor
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts enable-move-to-workspace-shortcuts true
 gsettings set org.gnome.shell.extensions.space-bar.shortcuts open-menu "@as []"
 
-# Canfigure Caffeine
+# Configure Caffeine
 gsettings --schemadir ~/.local/share/gnome-shell/extensions/caffeine@patapon.info/schemas/ set org.gnome.shell.extensions.caffeine toggle-state false
+
+# Configure tweaks
+gsettings set org.gnome.mutter center-new-windows true
+
+# Set Cascadia Mono as the default monospace font
+gsettings set org.gnome.desktop.interface monospace-font-name 'CaskaydiaMono Nerd Font 10'
